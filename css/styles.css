@@ -79,7 +79,7 @@ footer a {
 .top-nav {
     display: flex;
     justify-content: space-between;
-    padding: 2%;
+    padding: 2% 2% 2% 1%;
 }
 
 .main-nav {
@@ -136,4 +136,48 @@ footer a {
     width: 118px;
     height: 45px;
     font-size: 0.8em;
+}
+
+/*Search*/
+.search-wrapper {
+    padding-left: 5px;
+}
+
+.search-wrapper label {
+    font-size: 0.8em;
+    display: block;
+}
+
+.search-wrapper input {
+    width: 80%;
+    height: 45px;
+    font-size: 1.4em;
+}
+
+#search-button {
+    background-color: #0972C8;
+    border: none;
+    height: 45px;
+    width: 45px;
+}
+
+#icon-search {
+    color: #FFFFFF;
+    font-size: 1.4em;
+}
+
+/*breadcrums*/
+.container-breadcrums nav ol {
+    display: flex;
+    justify-content:flex-start;
+    padding-left: 5px;
+    list-style: none;
+}
+
+.container-breadcrums nav ol a {
+    color: #007095;
+}
+
+.container-breadcrums nav ol a:visited {
+    color: #8F3EBF;
 }
