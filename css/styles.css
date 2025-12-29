@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "my-font-h1";
+    src: url(fonts\HelveticaNeue-Bold.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "my-font-h2-h3";
+    src: url(fonts\HelveticaNeue-Medium.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "my-font-p";
+    src: url(fonts\HelveticaNeue-Roman.otf);
+    font-weight: normal;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "my-font-p", sans-serif;
+    background-color: #F6F6F4;
+    color: #000000;
+}
+
+header {
+    background-color: #3F3F3F;
+}
+
+.wrapper-navigation {
+    background-color: #FFFFFF;
+}
+
+main {
+    background-color: #D1CCC6;
+    padding: 2%;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2%;
+}
+
+footer {
+    background-color: #3F3F3F;
+}

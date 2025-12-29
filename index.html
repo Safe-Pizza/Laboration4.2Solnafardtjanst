@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://kit.fontawesome.com/b5d5f68d91.js" crossorigin="anonymous"></script>
+    <title>Startsida - Solna färdtjänst</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <h1>SOLNA FÄRDTJÄNST</h1>
+    </header>
+    <div class="wrapper-navigation">
+        <div class="topnav">
+            <a href="javascript:void(0);" class="icon-menu" title="ikon för mobilnavigering">
+                <span id="icon-menu" class="fa-solid fa-bars" aria-hidden="true"></span>
+            </a>
+            <div class="user">
+                <a href="mypages.html"><span class="fa-solid fa-user"></span>Logga in</a>
+            </div>
+        </div>
+        <nav class="mainnav">
+            <ul>
+                <li><a class="current-page" href="index.html">Startsida</a></li>
+                <li><a href="mypages.html">Mina sidor</a></li>
+                <li><a href="fardtjanst.html">Vad är färdtjänst?</a></li>
+                <li><a href="about.html">Om oss</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="search-wrapper">
+        <label for="search">Sök</label>
+        <input type="search" id="search" name="search">
+        <button><a href="index.html"><span class="fa-solid fa-magnifying-glass"></span></a></button>
+    </div>
+    <div class="container-breadcrums">
+        <nav class="breadcrums">
+            <ol>
+                <li></li>
+                <li></li>
+            </ol>
+        </nav>
+    </div>
+    <h2 class="page-title">Solna Färdtjänst</h2>
+    <main>
+        <section>
+            <h2 class="h1-font">Solna färdtjänst</h2>
+            <p>
+                Text här för startsida
+            </p>
+        </section>
+        <section>
+            <h3 class="h2-font">Vad är färdtjänst?</h3>
+            <p>Text här</p>
+            <p>text här</p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="index.html">Startsida <span class="fa-solid fa-chevron-right"></span></a></li>
+                <li><a href="mypages.html">Mina sidor <span class="fa-solid fa-chevron-right"></span></a></li>
+                <li><a href="fardtjanst.html">Vad är färdtjänst? <span class="fa-solid fa-chevron-right"></span></a>
+                </li>
+                <li><a href="about.html">Om oss <span class="fa-solid fa-chevron-right"></span></a></li>
+                <li><a href="contact.html">Kontakt <span class="fa-solid fa-chevron-right"></span></a></li>
+            </ul>
+        </div>
+        <div class="socialmedia-links">
+            <ul>
+                <li><a href="www.instagram.com"><span class="fa-brands fa-instagram"></span></a></li>
+                <li><a href="www.facebook.com"><span class="fa-brands fa-square-facebook"></span></a></li>
+                <li><a href="www.linkedin.com"><span class="fa-brands fa-square-linkedin"></span></a></li>
+            </ul>
+        </div>
+    </footer>
+    <!--Function for hamburgermenu mobile-->
+    <script>
+        document.querySelector("#icon-menu").addEventListener("click", myFunction);
+
+        function myFunction() {
+            var x = document.querySelector(".mainnav");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
