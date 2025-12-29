@@ -31,7 +31,7 @@ body {
 }
 
 h1 {
-    font-family: "my-font-h1", sans-serif;
+    font-family: "my-font-p", sans-serif;
     font-size: 2em;
 }
 
@@ -48,6 +48,8 @@ h3 {
 
 p {
     padding: 5% 2% 5% 2%;
+    max-width: 65ch;
+    margin: 0;
 }
 
 header {
@@ -62,6 +64,12 @@ main {
     background-color: #D1CCC6;
     padding: 5% 0% 5% 0%;
     margin-bottom: 50px;
+}
+
+main h2, h3 {
+    text-align: left;
+    padding-left: 2%;
+    margin-bottom: 0;
 }
 
 main a {
@@ -202,6 +210,12 @@ footer ul {
     padding: 0px 5px 0px 5px;
     margin: 0;
     font-size: 0.8em;
+}
+
+.footer-links li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .socialmedia-links {
