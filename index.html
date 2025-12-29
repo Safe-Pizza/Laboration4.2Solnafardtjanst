@@ -15,15 +15,15 @@
         <h1>SOLNA FÄRDTJÄNST</h1>
     </header>
     <div class="wrapper-navigation">
-        <div class="topnav">
+        <div class="top-nav">
             <a href="javascript:void(0);" class="icon-menu" title="ikon för mobilnavigering">
                 <span id="icon-menu" class="fa-solid fa-bars" aria-hidden="true"></span>
             </a>
             <div class="user">
-                <a href="mypages.html"><span class="fa-solid fa-user"></span>Logga in</a>
+                <a href="mypages.html"><span id="icon-user" class="fa-solid fa-user"></span>Logga in</a>
             </div>
         </div>
-        <nav class="mainnav">
+        <nav class="main-nav">
             <ul>
                 <li><a class="current-page" href="index.html">Startsida</a></li>
                 <li><a href="mypages.html">Mina sidor</a></li>
@@ -84,7 +84,7 @@
         document.querySelector("#icon-menu").addEventListener("click", myFunction);
 
         function myFunction() {
-            var x = document.querySelector(".mainnav");
+            var x = document.querySelector(".main-nav");
             if (x.style.display === "block") {
                 x.style.display = "none";
             } else {

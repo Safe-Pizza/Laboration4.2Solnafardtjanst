@@ -1,24 +1,24 @@
 @font-face {
     font-family: "my-font-h1";
-    src: 
-    local("HelveticaNeue-Bold"), local("Helvetica Neue Bold"),
-    url(fonts\HelveticaNeue-Bold.otf) format("opentype");
+    src:
+        local("HelveticaNeue-Bold"), local("Helvetica Neue Bold"),
+        url(fonts\HelveticaNeue-Bold.otf) format("opentype");
     font-weight: bold;
 }
 
 @font-face {
     font-family: "my-font-h2-h3";
     src:
-    local("HelveticaNeue-Medium"),local("Helvetica Neue Medium")
-    url(fonts\HelveticaNeue-Medium.otf) format("opentype");
+        local("HelveticaNeue-Medium"), local("Helvetica Neue Medium"),
+        url(fonts\HelveticaNeue-Medium.otf) format("opentype");
     font-weight: bold;
 }
 
 @font-face {
     font-family: "my-font-p";
-    src: 
-    local("HelveticaNeue-Roman"), local("Helvetica Neue Roman"),
-    url(fonts\HelveticaNeue-Roman.otf) format("opentype");
+    src:
+        local("HelveticaNeue-Roman"), local("Helvetica Neue Roman"),
+        url(fonts\HelveticaNeue-Roman.otf) format("opentype");
     font-weight: normal;
 }
 
@@ -30,7 +30,6 @@ body {
 }
 
 h1 {
-    font-size: 2em;
     font-family: "my-font-h1", sans-serif;
 }
 
@@ -47,6 +46,9 @@ h3 {
 header {
     background-color: #3F3F3F;
     color: #FFFFFF;
+    text-align: center;
+    min-height: 64px;
+    align-content: center;
 }
 
 .wrapper-navigation {
@@ -70,4 +72,20 @@ footer {
 
 footer a {
     color: #FFFFFF;
+}
+
+/*Main navigation*/
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+#icon-menu {
+    font-size: 2em;
+    align-self: center;
+}
+
+.user {
+    align-self: center;
 }
