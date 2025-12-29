@@ -27,6 +27,7 @@ body {
     background-color: #F6F6F4;
     color: #000000;
     font-size: 1em;
+    line-height: 1.6em;
 }
 
 h1 {
@@ -51,10 +52,6 @@ header {
     align-content: center;
 }
 
-.wrapper-navigation {
-    background-color: #FFFFFF;
-}
-
 main {
     background-color: #D1CCC6;
     padding: 2% 0% 2% 0%;
@@ -75,17 +72,68 @@ footer a {
 }
 
 /*Main navigation*/
+.wrapper-navigation {
+    background-color: #FFFFFF;
+}
+
 .top-nav {
     display: flex;
     justify-content: space-between;
     padding: 2%;
 }
 
+.main-nav {
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    background-color: #FFFFFF;
+}
+
+.main-nav ul {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.main-nav li {
+    border-bottom: 1px solid #000000;
+}
+
+.main-nav li a {
+    width: 100%;
+    height: 100%;
+    color: #000000;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+}
+
+.main-nav .current-page {
+    background-color: #3F3F3F;
+    color: #FFFFFF;
+}
+
 #icon-menu {
     font-size: 2em;
     align-self: center;
+    color: #000000;
 }
 
 .user {
     align-self: center;
+    background-color: #3F3F3F;
+    padding: 2%;
+}
+
+.user a {
+    color: #FFFFFF;
+    text-decoration: none;
+    width: 118px;
+    height: 45px;
+    font-size: 0.8em;
 }
