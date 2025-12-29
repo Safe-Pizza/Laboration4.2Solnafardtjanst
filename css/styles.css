@@ -32,16 +32,22 @@ body {
 
 h1 {
     font-family: "my-font-h1", sans-serif;
+    font-size: 2em;
 }
 
 h2 {
     font-size: 1.5625em;
     font-family: "my-font-h2-h3", sans-serif;
+    text-align: center;
 }
 
 h3 {
     font-size: 1.4em;
     font-family: "my-font-h2-h3", sans-serif;
+}
+
+p {
+    padding: 5% 2% 5% 2%;
 }
 
 header {
@@ -54,7 +60,12 @@ header {
 
 main {
     background-color: #D1CCC6;
-    padding: 2% 0% 2% 0%;
+    padding: 5% 0% 5% 0%;
+    margin-bottom: 50px;
+}
+
+main a {
+    color: #007095;
 }
 
 section {
@@ -63,8 +74,11 @@ section {
 }
 
 footer {
+    display: flex;
+    justify-content: space-between;
     background-color: #3F3F3F;
     color: #FFFFFF;
+    padding: 2% 2% 2% 2%;
 }
 
 footer a {
@@ -169,7 +183,7 @@ footer a {
 /*breadcrums*/
 .container-breadcrums nav ol {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     padding-left: 5px;
     list-style: none;
 }
@@ -180,4 +194,22 @@ footer a {
 
 .container-breadcrums nav ol a:visited {
     color: #8F3EBF;
+}
+
+/*footer-navigation*/
+footer ul {
+    list-style: none;
+    padding: 0px 5px 0px 5px;
+    margin: 0;
+    font-size: 0.8em;
+}
+
+.socialmedia-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.socialmedia-links span {
+    font-size: 3em;
 }
