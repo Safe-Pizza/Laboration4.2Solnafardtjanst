@@ -149,6 +149,7 @@ footer .footer-container {
     color: #FFFFFF;
 }
 
+/*Setting nav logon*/
 .logon-main-nav {
     background-color: #69525E;
 }
@@ -381,6 +382,10 @@ footer ul {
         float: left;
     }
 
+    .logon-main-nav li a {
+        color: white;
+    }
+
     section {
         width: 90%;
         margin: 0 auto;
@@ -558,13 +563,17 @@ footer ul {
         float: left;
     }
 
+    .logon-main-nav li a {
+        color: #FFFFFF;
+    }
+
     section {
         width: 90%;
         margin: 0 auto;
         border-radius: 10px;
     }
 
-        footer {
+    footer {
         font-size: 1.4em;
     }
 
