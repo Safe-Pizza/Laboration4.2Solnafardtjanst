@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://kit.fontawesome.com/b5d5f68d91.js" crossorigin="anonymous"></script>
+    <title>Startsida - Logga in</title>
+</head>
+
+<body>
+    <header>
+        <div class="main-header vertical-center">
+            <h1>SOLNA FÄRDTJÄNST</h1>
+            <div class="search-wrapper-header">
+                <label for="search" class="hidden-label">Sök</label>
+                <input class="search-input-header" type="text" id="search-header" name="search-header"
+                    placeholder="Sök">
+                <span class="fa-solid fa-magnifying-glass icon-search-header"></span>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper-navigation-fullwitdh">
+        <div class="wrapper-navigation vertical-center">
+            <div class="top-nav">
+                <a href="javascript:void(0);" class="icon-menu" title="ikon för mobilnavigering">
+                    <span id="icon-menu" class="fa-solid fa-bars" aria-hidden="true"></span>
+                </a>
+                <div class="user">
+                    <a href="logon.html"><span id="icon-user" class="fa-solid fa-user"></span> Logga in</a>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a class="current-page" href="logon.html">Mina sidor</a></li>
+                    <li><a href="fardtjanst.html">Vad är färdtjänst?</a></li>
+                    <li><a href="about.html">Om oss</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="search-wrapper vertical-center">
+        <label for="search">Sök</label>
+        <input type="text" id="search" name="search">
+        <button id="search-button"><span id="icon-search" class="fa-solid fa-magnifying-glass"></span></button>
+    </div>
+    <div class="container-breadcrums vertical-center">
+        <nav class="breadcrums">
+            <ol>
+                <li><a href="index.html">Startsida</a></li>
+                <li> / Logga in</li>
+            </ol>
+        </nav>
+    </div>
+    <h2 class="page-title">Logga in</h2>
+    <main>
+        <div class="vertical-center">
+            <section>
+                <h2 class="heading-hidden">Logga in</h2>
+                <div class="user-logon-form">
+                    <label for="username">Användarnamn</label>
+                    <input type="text" id="username" name="username">
+                    <label for="password">Lösenord</label>
+                    <input type="text" id="password" name="password">
+                    <button>Logga in</button>
+                    <button>Rensa</button>
+                </div>
+                <div class="heading">
+                    <h2 class="h2-font">Saknar du ett konto för inloggning?</h2>
+                </div>
+                <p>För att skapa ett konto måste du ha fått din färdtjänst ansökan beviljad av Region Stockholm.
+                    Behöver du mer information om färdtjänst och hur du ansöker finns det hos <a
+                        href="https://fardtjansten.regionstockholm.se/">Färdtjänst - Region
+                        Stockholm</a></p>
+                <p>När du har fått beviljad färdtjänst och ditt färdtjänstkort kan du enkel skapa ett konto. Se till att
+                    ha ditt färdtjänstkort tillgängligt.</p>
+                <button>Skapa Konto</button>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container vertical-center">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Startsida <span class="fa-solid fa-chevron-right"></span></a></li>
+                    <li><a href="mypages.html">Mina sidor <span class="fa-solid fa-chevron-right"></span></a></li>
+                    <li><a href="about.html">Om oss <span class="fa-solid fa-chevron-right"></span></a></li>
+                    <li><a href="contact.html">Kontakt <span class="fa-solid fa-chevron-right"></span></a></li>
+                    <li><a href="accessibility.html">Tillgänglighetsredogörelse <span
+                                class="fa-solid fa-chevron-right"></span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="socialmedia-links">
+                <ul>
+                    <li><a href="www.instagram.com"><span class="fa-brands fa-instagram"></span></a></li>
+                    <li><a href="www.facebook.com"><span class="fa-brands fa-square-facebook"></span></a></li>
+                    <li><a href="www.linkedin.com"><span class="fa-brands fa-square-linkedin"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!--Function for hamburgermenu mobile-->
+    <script>
+        document.querySelector("#icon-menu").addEventListener("click", myFunction);
+
+        function myFunction() {
+            var x = document.querySelector(".main-nav");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
