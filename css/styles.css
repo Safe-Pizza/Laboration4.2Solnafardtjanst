@@ -53,11 +53,16 @@ p {
 }
 
 header {
+    width: 100%;
     background-color: #3F3F3F;
     color: #FFFFFF;
     text-align: center;
     min-height: 64px;
     align-content: center;
+}
+
+.search-wrapper-header {
+    display: none;
 }
 
 main {
@@ -83,8 +88,6 @@ section {
 }
 
 footer {
-    display: flex;
-    justify-content: space-between;
     background-color: #3F3F3F;
     color: #FFFFFF;
     padding: 2% 2% 2% 2%;
@@ -92,6 +95,11 @@ footer {
 
 footer a {
     color: #FFFFFF;
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 /*Main navigation*/
@@ -231,10 +239,237 @@ footer ul {
 
 /*tablet setting*/
 @media screen and (min-width: 800px) and (max-width: 1199px) {
+    .vertical-center {
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 10px;
+    }
+
+    .search-wrapper {
+        display: none;
+    }
+
+    .search-wrapper-header {
+        display: block;
+        justify-self: flex-end;
+    }
+
+    .hidden-label {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+
+    header {
+        min-height: 84px;
+    }
+
+    .main-header {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    /*Search header*/
+    .search-wrapper-header {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
+        border: 1px solid;
+        margin-right: 10px;
+        width: 30%;
+        background-color: #FFFFFF;
+    }
+
+    .search-wrapper-header input {
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 1.2em;
+    }
+
+    .icon-search-header {
+        font-size: 1.4em;
+        color: #3F3F3F;
+        margin-left: 10px;
+    }
 
     /*mainnav settings*/
     #icon-menu {
         display: none;
+    }
+
+    .wrapper-navigation-fullwitdh {
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+
+    .wrapper-navigation {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 0px;
+    }
+
+    .top-nav {
+        width: 110px;
+        height: 51px;
+        display: block;
+        grid-area: 1 / 6 / 2 / 7;
+        align-self: center;
+        justify-self: end;
+    }
+
+    .main-nav {
+        display: block;
+        position: relative;
+        grid-area: 1 / 1 / 2 / 6;
+    }
+
+    .main-nav ul {
+        list-style: none;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        padding-left: 0;
+        margin-top: 0;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .main-nav li {
+        border-bottom: none;
+        padding-right: 10px;
+    }
+
+    .main-nav li a {
+        width: 80%;
+        height: 50%;
+        color: #000000;
+        text-align: left;
+        padding: 14px 16px;
+        text-decoration: none;
+        float: left;
+    }
+
+    section {
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    /*Font sizes*/
+    h1 {
+        font-family: "my-font-p", sans-serif;
+        font-size: 3em;
+        text-align: left;
+        padding-left: 1%;
+        padding-top: 1%;
+    }
+
+    h2 {
+        font-size: 2em;
+        font-family: "my-font-h2-h3", sans-serif;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.7em;
+        font-family: "my-font-h2-h3", sans-serif;
+    }
+
+    p {
+        margin: 0 auto;
+        font-size: 1.2em;
+    }
+
+    .h2-font {
+        padding: 0;
+        margin: 0;
+        text-align: left;
+    }
+
+    .heading {
+        margin: 0 auto;
+        padding: 5% 10% 0% 0%;
+        max-width: 65ch;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .vertical-center {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    header {
+        min-height: 84px;
+    }
+
+    .main-header {
+        min-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .search-wrapper {
+        display: none;
+    }
+
+    .search-wrapper-header {
+        display: block;
+        justify-self: flex-end;
+    }
+
+    .hidden-label {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+
+    header {
+        display: flex;
+        min-height: 84px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /*Search header*/
+    .search-wrapper-header {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
+        border: 1px solid;
+        margin-right: 10px;
+        width: 30%;
+        background-color: #FFFFFF;
+    }
+
+    .search-wrapper-header input {
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 1.2em;
+    }
+
+    .icon-search-header {
+        font-size: 1.4em;
+        color: #3F3F3F;
+        margin-left: 10px;
+    }
+
+    /*mainnav settings*/
+    #icon-menu {
+        display: none;
+    }
+
+    .wrapper-navigation-fullwitdh {
+        background-color: #FFFFFF;
     }
 
     .wrapper-navigation {
@@ -290,12 +525,41 @@ footer ul {
         border-radius: 10px;
     }
 
-    p {
-        margin: 0 auto;
+    /*Font sizes*/
+    h1 {
+        font-family: "my-font-p", sans-serif;
+        font-size: 3em;
+        text-align: left;
+        padding-left: 1%;
+        padding-top: 1%;
     }
 
-    section h2,
-    h3 {
-        margin-left: 13%;
-       }
+    h2 {
+        font-size: 2em;
+        font-family: "my-font-h2-h3", sans-serif;
+        text-align: center;
+        padding: 0% 5% 0% 5%;
     }
+
+    h3 {
+        font-size: 1.7em;
+        font-family: "my-font-h2-h3", sans-serif;
+    }
+
+    p {
+        margin: 0 auto;
+        font-size: 1.2em;
+    }
+
+    .h2-font {
+        padding: 0;
+        margin: 0;
+        text-align: left;
+    }
+
+    .heading {
+        margin: 0 auto;
+        padding: 5% 10% 0% 0%;
+        max-width: 65ch;
+    }
+}
