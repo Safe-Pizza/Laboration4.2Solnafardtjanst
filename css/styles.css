@@ -225,6 +225,7 @@ footer ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 10px;
 }
 
 .socialmedia-links {
@@ -304,12 +305,14 @@ footer ul {
     .wrapper-navigation-fullwitdh {
         width: 100%;
         background-color: #FFFFFF;
+        min-height: 80px;
     }
 
     .wrapper-navigation {
         display: grid;
         grid-template-columns: auto auto;
         padding: 0px;
+        min-height: 80px;
     }
 
     .top-nav {
@@ -321,10 +324,16 @@ footer ul {
         justify-self: end;
     }
 
+    .user a {
+        font-size: 1em;
+    }
+
     .main-nav {
         display: block;
         position: relative;
         grid-area: 1 / 1 / 2 / 6;
+        min-height: 80px;
+        align-content: center;
     }
 
     .main-nav ul {
@@ -346,7 +355,7 @@ footer ul {
 
     .main-nav li a {
         width: 80%;
-        height: 50%;
+        height: 52px;
         color: #000000;
         text-align: left;
         padding: 14px 16px;
@@ -383,6 +392,10 @@ footer ul {
     p {
         margin: 0 auto;
         font-size: 1.2em;
+    }
+
+    footer {
+        font-size: 1.4em;
     }
 
     .h2-font {
@@ -470,11 +483,13 @@ footer ul {
 
     .wrapper-navigation-fullwitdh {
         background-color: #FFFFFF;
+        max-height: 80px;
     }
 
     .wrapper-navigation {
         display: grid;
         grid-template-columns: auto auto;
+        min-height: 80px;
     }
 
     .top-nav {
@@ -486,10 +501,16 @@ footer ul {
         justify-self: end;
     }
 
+    .user a {
+        font-size: 1em;
+    }
+
     .main-nav {
         display: block;
         position: relative;
         grid-area: 1 / 1 / 2 / 6;
+        min-height: 80px;
+        align-content: center;
     }
 
     .main-nav ul {
@@ -511,7 +532,7 @@ footer ul {
 
     .main-nav li a {
         width: 80%;
-        height: 50%;
+        height: 52px;
         color: #000000;
         text-align: left;
         padding: 14px 16px;
@@ -523,6 +544,10 @@ footer ul {
         width: 90%;
         margin: 0 auto;
         border-radius: 10px;
+    }
+
+        footer {
+        font-size: 1.4em;
     }
 
     /*Font sizes*/
