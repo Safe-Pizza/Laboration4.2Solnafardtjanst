@@ -213,6 +213,12 @@ footer .footer-container {
     color: #8F3EBF;
 }
 
+.heading-hidden {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
+
 /*footer-navigation*/
 footer ul {
     list-style: none;
