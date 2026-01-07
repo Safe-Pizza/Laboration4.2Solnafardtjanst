@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/normalize.css">
     <script src="https://kit.fontawesome.com/b5d5f68d91.js" crossorigin="anonymous"></script>
-    <title>Vad är färdtjänst - Solna färdtjänst</title>
+    <title>Mina sidor - Solna färdtjänst</title>
 </head>
 
 <body>
@@ -32,11 +32,17 @@
                     <a href="logon.html"><span id="icon-user" class="fa-solid fa-user"></span> Logga in</a>
                 </div>
             </div>
-            <nav class="main-nav">
+            <nav class="main-nav mypages-nav">
+                <ul class="logon-main-nav">
+                    <li><a class="current-page" href="mypages.html">Mina sidor</a></li>
+                    <li><a href="bokaresa.html">Boka resa</a></li>
+                    <li><a href="bokaaterkommande.html">Boka återkommande resa</a></li>
+                    <li><a href="kommanderesor.html">Mina kommande resor</a></li>
+                </ul>
                 <ul>
                     <li><a href="index.html">Startsida</a></li>
                     <li><a href="logon.html">Mina sidor</a></li>
-                    <li><a class="current-page" href="fardtjanst.html">Vad är färdtjänst?</a></li>
+                    <li><a href="fardtjanst.html">Vad är färdtjänst?</a></li>
                     <li><a href="about.html">Om oss</a></li>
                     <li><a href="contact.html">Kontakt</a></li>
                 </ul>
@@ -51,34 +57,30 @@
     <div class="container-breadcrums vertical-center">
         <nav class="breadcrums">
             <ol>
-                <li><a href="index.html">Startsida</a></li>
-                <li> / Vad är färdtjänst?</li>
+                <li><a href=""></a></li>
+                <li></li>
             </ol>
         </nav>
     </div>
-    <h2 class="page-title">Vad är färdtjänst?</h2>
+    <h2 class="page-title">Mina sidor</h2>
+    <h3>Vad vill du göra idag?</h3>
     <main>
         <div class="vertical-center">
-            <section>
-                <h2 class="heading-hidden">Vad är färdtjänst?</h2>
-                <p>
-                    Färdtjänst är en del av kollektivtrafiken i Stockholms län. Den är till för dig som har
-                    funktionsnedsättningar och inte kan resa med kollektivtrafiken, eller har väsentliga svårigheter att
-                    resa med kollektivtrafiken.
-                </p>
-            </section>
-            <section>
-                <div class="heading">
-                    <h2 class="h2-font">Mer om färdtjänst</h2>
-                </div>
-                <ul>
-                    <li><a href="fungerarfardtjanst.html">Hur fungerar färdtjänst?</a></li>
-                    <li><a href="ansokfardtjanst.html">Ansök om färdtjänst</a></li>
-                    <li><a href="resafardtjanst.html">Olika sätt att resa</a></li>
-                    <li><a href="avgiftfardtjanst.html">Avgifter för färdtjänst</a></li>
-                    <li><a href="reglerfardtjanst.html">Regler för färdtjänst</a></li>
-                </ul>
-            </section>
+            <div class="container-boka-resa">
+                <a href="bokaresa.html">Boka resa</a>
+            </div>
+            <div class="container-boka-aterkommande">
+                <a href="bokaaterkommande.html">Boka återkommande resa</a>
+            </div>
+            <div class="container-mina-resor">
+                <a href="kommanderesor.html">Mina kommande resor</a>
+            </div>
+            <div class="container-my-profile">
+                <a href="myprofile.html">Min profil</a>
+            </div>
+            <div class="container-logout">
+                <a href="logon.html">Logga ut</a>
+            </div>
         </div>
     </main>
     <footer>

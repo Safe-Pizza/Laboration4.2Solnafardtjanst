@@ -149,6 +149,18 @@ footer .footer-container {
     color: #FFFFFF;
 }
 
+.logon-main-nav {
+    background-color: #69525E;
+}
+
+.logon-main-nav li {
+    border-bottom: 1px solid white;
+}
+
+.logon-main-nav li a {
+    color: white;
+}
+
 #icon-menu {
     font-size: 2em;
     align-self: center;
