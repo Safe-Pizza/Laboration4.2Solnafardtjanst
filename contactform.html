@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://kit.fontawesome.com/b5d5f68d91.js" crossorigin="anonymous"></script>
+    <title>Om oss - Solna färdtjänst</title>
+</head>
+
+<body>
+    <header>
+        <div class="main-header vertical-center">
+            <h1>SOLNA FÄRDTJÄNST</h1>
+            <div class="search-wrapper-header">
+                <label for="search-header" class="hidden-label">Sök</label>
+                <input class="search-input-header" type="text" id="search-header" name="search-header"
+                    placeholder="Sök">
+                <span class="fa-solid fa-magnifying-glass icon-search-header"></span>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper-navigation-fullwitdh">
+        <div class="wrapper-navigation vertical-center">
+            <div class="top-nav">
+                <a href="javascript:void(0);" class="icon-menu" title="ikon för mobilnavigering">
+                    <span id="icon-menu" class="fa-solid fa-bars" aria-hidden="true"></span>
+                </a>
+                <div class="user">
+                    <a href="logon.html"><span id="icon-user" class="fa-solid fa-user"></span> Logga in</a>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="logon.html">Mina sidor</a></li>
+                    <li><a href="fardtjanst.html">Vad är färdtjänst?</a></li>
+                    <li><a href="about.html">Om oss</a></li>
+                    <li><a class="current-page" href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="search-wrapper vertical-center">
+        <label for="search">Sök</label>
+        <input type="text" id="search" name="search">
+        <button id="search-button"><span id="icon-search" class="fa-solid fa-magnifying-glass"></span></button>
+    </div>
+    <div class="container-breadcrums vertical-center">
+        <nav class="breadcrums">
+            <ol>
+                <li><a href="index.html">Startsida</a></li>
+                <li> / Kontakt</li>
+            </ol>
+        </nav>
+    </div>
+    <h2 class="page-title">Kontaktformulär</h2>
+    <main>
+        <div class="vertical-center">
+            <section class="contact-form">
+                <div class="form-contact">
+                    <div class="form-contact-fname">
+                        <label for="contact-fname">Förnamn</label><br>
+                        <input type="text" id="contact-fname" name="contact-fname" placeholder="Skriv ditt förnamn">
+                    </div>
+                    <div class="form-contact-phone">
+                        <label for="contact-phone">Telefonnummer</label><br>
+                        <input type="text" id="contact-phone" name="contact-phone"
+                            placeholder="Skriv ditt telefonnummer">
+                    </div>
+                    <div class="form-contact-email">
+                        <label for="contact-email">Email-adress</label><br>
+                        <input type="text" id="contact-email" name="contact-email" placeholder="Skriv din email-adress">
+                    </div>
+                    <div class="form-contact-subject">
+                        <label for="contact-subject">Ämne</label><br>
+                        <select name="contact-subject" id="contact-subject">
+                            <option value="subject">Välj ämne</option>
+                            <option value="booking">Bokningsfrågor</option>
+                            <option value="accessibility">Tillgänglighet frågor/anmälan</option>
+                            <option value="others">Övriga frågor</option>
+                        </select>
+                    </div>
+                    <div class="form-contact-question">
+                        <label for="contact-question">Skriv din fråga</label><br>
+                        <input type="textarea" id="contact-question" name="contact-question"
+                            placeholder="Här kan du skriva dina frågor eller funderingar">
+                    </div>
+                    <div class="container-submit-contact">
+                        <a href="contactformconfirm.html">Skicka</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container vertical-center">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Startsida <span class="fa-solid fa-chevron-right"></span></a></li>
+                    <li><a href="logon.html">Mina sidor <span class="fa-solid fa-chevron-right"></span></a></li>
+                    <li><a href="about.html">Om oss <span class="fa-solid fa-chevron-right"></span></a></li>
+                    <li><a href="contact.html">Kontakt <span class="fa-solid fa-chevron-right"></span></a></li>
+                    <li><a href="accessibility.html">Tillgänglighetsredogörelse <span
+                                class="fa-solid fa-chevron-right"></span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="socialmedia-links">
+                <ul>
+                    <li><a href="www.instagram.com" title="Instagram"><span class="fa-brands fa-instagram"></span></a>
+                    </li>
+                    <li><a href="www.facebook.com" title="Facebook"><span
+                                class="fa-brands fa-square-facebook"></span></a></li>
+                    <li><a href="www.linkedin.com" title="Linkedin"><span
+                                class="fa-brands fa-square-linkedin"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!--Function for hamburgermenu mobile-->
+    <script>
+        document.querySelector("#icon-menu").addEventListener("click", myFunction);
+
+        function myFunction() {
+            var x = document.querySelector(".main-nav");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
