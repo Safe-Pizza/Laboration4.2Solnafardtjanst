@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://kit.fontawesome.com/b5d5f68d91.js" crossorigin="anonymous"></script>
+    <title>Kontrollera uppgifter - Solna färdtjänst</title>
+</head>
+
+<body>
+    <header>
+        <div class="main-header vertical-center">
+            <h1>SOLNA FÄRDTJÄNST</h1>
+            <div class="search-wrapper-header">
+                <label for="search" class="hidden-label">Sök</label>
+                <input class="search-input-header" type="text" id="search-header" name="search-header"
+                    placeholder="Sök">
+                <span class="fa-solid fa-magnifying-glass icon-search-header"></span>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper-navigation-fullwitdh">
+        <div class="wrapper-navigation vertical-center">
+            <div class="top-nav">
+                <a href="javascript:void(0);" class="icon-menu" title="ikon för mobilnavigering">
+                    <span id="icon-menu" class="fa-solid fa-bars" aria-hidden="true"></span>
+                </a>
+                <div class="user">
+                    <a href="logon.html"><span id="icon-user" class="fa-solid fa-user"></span> Logga in</a>
+                </div>
+            </div>
+            <nav class="main-nav mypages-nav">
+                <ul class="logon-main-nav">
+                    <li><a href="mypages.html">Mina sidor</a></li>
+                    <li><a href="bokaresa.html">Boka resa</a></li>
+                    <li><a class="current-page" href="bokaaterkommande.html">Boka återkommande resa</a></li>
+                    <li><a href="kommanderesor.html">Mina kommande resor</a></li>
+                </ul>
+                <ul>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="logon.html">Mina sidor</a></li>
+                    <li><a href="fardtjanst.html">Vad är färdtjänst?</a></li>
+                    <li><a href="about.html">Om oss</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="search-wrapper vertical-center">
+        <label for="search">Sök</label>
+        <input type="text" id="search" name="search">
+        <button id="search-button"><span id="icon-search" class="fa-solid fa-magnifying-glass"></span></button>
+    </div>
+    <div class="container-breadcrums vertical-center">
+        <nav class="breadcrums">
+            <ol>
+                <li><a href=""></a></li>
+                <li></li>
+            </ol>
+        </nav>
+    </div>
+    <h2 class="page-title">Kontrollera uppgifter</h2>
+    <main>
+        <div class="vertical-center">
+            <section class="confirm-bokaresa">
+                <div class="confirmation-info">
+                    <div class="confirm-date">
+                        <span class="fa-solid fa-calendar-days"></span>
+                        <date>2025-12-31</date>
+                        <span class="fa-solid fa-clock"></span><time>Nu</time>
+                    </div>
+                    <div class="confirm-address">
+                        <span class="fa-solid fa-arrow-right"></span>
+                        <address>Armegatan 1</address>
+                        <span class="fa-solid fa-car"></span><span class="text">Rullstolstaxi</span>
+                    </div>
+                    <div class="confirm-others">
+                        <br><span class="text">Hur ofta: Varannan vecka</span><br>
+                        <span class="text">Veckodag: Måndag, tisdag</span><br><br>
+                        <span class="text">Slutdatum: 2026-02-08</span><br><br>
+                        <span class="text">Medresenärer: 0</span><br>
+                        <span class="text">Övrig information</span><br><br><br>
+                    </div>
+                    <div class="confirm-buttons">
+                        <div class="container-confirm-trip">
+                            <a href="confirmedbokaaterkommande.html">Bekräfta bokning</a>
+                        </div>
+                        <div class="container-back">
+                            <span class="fa-solid fa-circle-arrow-left"></span>
+                            <a href="bokaaterkommande.html">Tillbaka</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container vertical-center">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Startsida <span class="fa-solid fa-chevron-right"></span></a></li>
+                    <li><a href="logon.html">Mina sidor <span class="fa-solid fa-chevron-right"></span></a></li>
+                    <li><a href="about.html">Om oss <span class="fa-solid fa-chevron-right"></span></a></li>
+                    <li><a href="contact.html">Kontakt <span class="fa-solid fa-chevron-right"></span></a></li>
+                    <li><a href="accessibility.html">Tillgänglighetsredogörelse <span
+                                class="fa-solid fa-chevron-right"></span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="socialmedia-links">
+                <ul>
+                    <li><a href="www.instagram.com"><span class="fa-brands fa-instagram"></span></a></li>
+                    <li><a href="www.facebook.com"><span class="fa-brands fa-square-facebook"></span></a></li>
+                    <li><a href="www.linkedin.com"><span class="fa-brands fa-square-linkedin"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!--Function for hamburgermenu mobile-->
+    <script>
+        document.querySelector("#icon-menu").addEventListener("click", myFunction);
+
+        function myFunction() {
+            var x = document.querySelector(".main-nav");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
