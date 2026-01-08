@@ -382,8 +382,16 @@ footer ul {
         float: left;
     }
 
+    .logon-main-nav {
+        background-color: #FFFFFF;
+    }
+
+    .logon-main-nav li {
+        border-bottom: 1px solid #000000;
+    }
+
     .logon-main-nav li a {
-        color: white;
+        color: #000000;
     }
 
     section {
@@ -506,7 +514,7 @@ footer ul {
 
     .wrapper-navigation-fullwitdh {
         background-color: #FFFFFF;
-        max-height: 80px;
+        min-height: 80px;
     }
 
     .wrapper-navigation {
@@ -563,8 +571,16 @@ footer ul {
         float: left;
     }
 
+    .logon-main-nav {
+        background-color: #FFFFFF;
+    }
+
+    .logon-main-nav li {
+        border-bottom: 1px solid #000000;
+    }
+
     .logon-main-nav li a {
-        color: #FFFFFF;
+        color: #000000;
     }
 
     section {
