@@ -304,7 +304,7 @@ footer ul {
     text-decoration: none;
     display: inline-block;
     font-size: 1.2em;
-    min-width: 300px;
+    min-width: 250px;
 }
 
 /*blue button small styling*/
@@ -500,6 +500,19 @@ ul.page-links {
     line-height: 2em;
     padding-left: 2%;
     grid-area: 2 / 1 / 3 / 2;
+}
+
+.contact-buttons {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+    padding-left: 0px;
+}
+
+.contact-buttons div {
+    padding-left: 0px;
+    margin-bottom: 40px;
 }
 
 /*tablet setting*/
