@@ -59,7 +59,7 @@
     <div class="container-breadcrums vertical-center">
         <nav class="breadcrums">
             <ol>
-                <li><a href=""></a></li>
+                <li></li>
                 <li></li>
             </ol>
         </nav>
@@ -68,6 +68,7 @@
     <main>
         <div class="vertical-center">
             <section class="bokaresa">
+                <h2 class="heading-hidden">Boka din resa här</h2>
                 <div class="form-veichle">
                     <div class="veichle">
                         <input type="radio" id="taxi" name="veichle" value="Färdtjänsttaxi">
@@ -92,11 +93,12 @@
                         <span class="fa-solid fa-arrow-left"></span>
                     </div>
                 </div>
-                <div class="form-trip-datettime">
-                    <label for="trip-date">Första resan - datum</label><label for="trip-time"> och tid:</label><br>
+                <div class="form-trip-date-first">
+                    <label for="trip-date-first">Första resan - datum</label><label for="trip-time-first"> och
+                        tid:</label><br>
                     <div class="input-text-icon">
-                        <input type="date" id="trip-date" name="trip-return-date" placeholder="Idag">
-                        <input type="time" id="trip-time" name="trip-return-time" placeholder="- nu">
+                        <input type="date" id="trip-date-first" name="trip-date-first">
+                        <input type="time" id="trip-time-first" name="trip-time-first">
                     </div>
                 </div>
                 <div class="form-trip-frequence">
@@ -121,16 +123,16 @@
 
                         <div>
                             <input type="checkbox" id="tuesday" name="tuesday">
-                            <label for="horns">Tisdag</label>
+                            <label for="tuesday">Tisdag</label>
                         </div>
                         <div>
                             <input type="checkbox" id="wednesday" name="wednesday">
-                            <label for="wedneday">Onsdag</label>
+                            <label for="wednesday">Onsdag</label>
                         </div>
 
                         <div>
                             <input type="checkbox" id="thursday" name="thursday">
-                            <label for="thurday">Torsdag</label>
+                            <label for="thursday">Torsdag</label>
                         </div>
                         <div>
                             <input type="checkbox" id="friday" name="friday">
@@ -147,10 +149,10 @@
                         </div>
                     </fieldset>
                 </div>
-                <div class="form-trip-date">
-                    <label for="trip-date">Slutdatum:</label><br>
+                <div class="form-trip-date-end">
+                    <label for="trip-date-end">Slutdatum:</label><br>
                     <div class="input-text-icon">
-                        <input type="date" id="trip-date" name="trip-date" placeholder="Välj slutdatum">
+                        <input type="date" id="trip-date-end" name="trip-date-end">
                     </div>
                 </div>
                 <div class="form-trip-fellowtraveller">

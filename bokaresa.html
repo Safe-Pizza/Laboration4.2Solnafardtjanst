@@ -53,7 +53,7 @@
     <div class="container-breadcrums vertical-center">
         <nav class="breadcrums">
             <ol>
-                <li><a href=""></a></li>
+                <li></li>
                 <li></li>
             </ol>
         </nav>
@@ -62,15 +62,16 @@
     <main>
         <div class="vertical-center">
             <section class="bokaresa">
+                <h2 class="heading-hidden">Boka din resa här</h2>
                 <div class="form-veichle">
-                <div class="veichle">
-                    <input type="radio" id="taxi" name="veichle" value="Färdtjänsttaxi">
-                    <label for="taxi">Färdtjänsttaxi</label><br>
-                    <input type="radio" id="wheelchair" name="veichle" value="Rullstolstaxi">
-                    <label for="wheelchair">Rullstolstaxi</label><br>
-                    <input type="radio" id="stretcher" name="veichle" value="Bårtaxi">
-                    <label for="stretcher">Bårtaxi</label>
-                </div>
+                    <div class="veichle">
+                        <input type="radio" id="taxi" name="veichle" value="Färdtjänsttaxi">
+                        <label for="taxi">Färdtjänsttaxi</label><br>
+                        <input type="radio" id="wheelchair" name="veichle" value="Rullstolstaxi">
+                        <label for="wheelchair">Rullstolstaxi</label><br>
+                        <input type="radio" id="stretcher" name="veichle" value="Bårtaxi">
+                        <label for="stretcher">Bårtaxi</label>
+                    </div>
                 </div>
                 <div class="form-trip-from">
                     <label for="trip-from">Jag vill resa från:</label><br>
@@ -89,80 +90,80 @@
                 <div class="form-trip-datettime">
                     <label for="trip-date">Avresedag och</label><label for="trip-time"> tid:</label><br>
                     <div class="input-text-icon">
-                        <input type="date" id="trip-date" name="trip-return-date" placeholder="Idag">
-                        <input type="time" id="trip-time" name="trip-return-time" placeholder="- nu">
+                        <input type="date" id="trip-date" name="trip-return-date">
+                        <input type="time" id="trip-time" name="trip-return-time">
                     </div>
                 </div>
-        <div class="form-trip-fellowtraveller">
-            <label for="trip-fellowtraveller">Medresenärer:</label><br>
-            <div class="input-text-icon">
-                <select name="trip-fellowtraveller" id="trip-fellowtraveller">
-                    <option value="Inga medresenärer">Inga medresenärer</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                </select>
-            </div>
-        </div>
-        <div class="form-trip-other">
-            <label for="trip-other">Övrig information:</label><br>
-            <textarea id="trip-other" name="trip-other" placeholder="ex. bilbarnstol, ledarhund"></textarea>
-            <p class="form-trip-other-info">Här kan du skriva mer information om du bokning tex om du har en
-                medföljande ledarhund, att du önskar sitta fram i bilen eller annan viktigt information</p>
-        </div>
-        <div class="form-trip-return">
-            <h2>Returresa</h2>
-            <label for="trip-return" class="hidden-label">Returresa:</label><br>
-            <div class="input-text-icon">
-                <select name="trip-return" id="trip-return">
-                    <option value="Ingen returresa">Ingen returresa</option>
-                    <option value="returresa">Jag vill boka returresa</option>
-                </select>
-            </div>
-        </div>
-        <div class="form-trip-return-from">
-            <label for="trip-return-from">Jag vill resa från:</label><br>
-            <div class="input-text-icon">
-                <input type="text" id="trip-return-from" name="trip-return-from" placeholder="ex. Storgatan 1">
-                <span class="fa-solid fa-arrow-right"></span>
-            </div>
-        </div>
-        <div class="form-trip-return-to">
-            <label for="trip-retunr-to">Jag vill resa till:</label><br>
-            <div class="input-text-icon">
-                <input type="text" id="trip-return-to" name="trip-return-to" placeholder="ex. Armegatan 1">
-                <span class="fa-solid fa-arrow-left"></span>
-            </div>
-        </div>
-        <div class="form-trip-return-datettime">
-            <label for="trip-return-date">Avresedag och</label><label for="trip-return-time"> tid:</label><br>
-            <div class="input-text-icon">
-                <input type="date" id="trip-return-date" name="trip-return-date" placeholder="Idag">
-                <input type="time" id="trip-return-time" name="trip-return-time" placeholder="- nu">
-            </div>
-        </div>
-        <div class="form-trip-return-fellowtraveller">
-            <label for="trip-return-fellowtraveller">Medresenärer:</label><br>
-            <div class="input-text-icon">
-                <select name="trip-return-fellowtraveller" id="trip-return-fellowtraveller">
-                    <option value="Inga medresenärer">Inga medresenärer</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                </select>
-            </div>
-        </div>
-        <div class="form-trip-return-other">
-            <label for="trip-return-other">Övrig information:</label><br>
-            <textarea id="trip-return-other" name="trip-return-other"
-                placeholder="ex. bilbarnstol, ledarhund"></textarea>
-            <p class="form-trip-other-info">Här kan du skriva mer information om du bokning tex om du har en
-                medföljande ledarhund, att du önskar sitta fram i bilen eller annan viktigt information</p>
-        </div>
-        <div class="container-submit-trip">
-            <a href="confirmbokaresa.html" class="purple-button">Boka resa</a>
-        </div>
-        </section>
+                <div class="form-trip-fellowtraveller">
+                    <label for="trip-fellowtraveller">Medresenärer:</label><br>
+                    <div class="input-text-icon">
+                        <select name="trip-fellowtraveller" id="trip-fellowtraveller">
+                            <option value="Inga medresenärer">Inga medresenärer</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-trip-other">
+                    <label for="trip-other">Övrig information:</label><br>
+                    <textarea id="trip-other" name="trip-other" placeholder="ex. bilbarnstol, ledarhund"></textarea>
+                    <p class="form-trip-other-info">Här kan du skriva mer information om du bokning tex om du har en
+                        medföljande ledarhund, att du önskar sitta fram i bilen eller annan viktigt information</p>
+                </div>
+                <div class="form-trip-return">
+                    <h2>Returresa</h2>
+                    <label for="trip-return" class="hidden-label">Returresa:</label><br>
+                    <div class="input-text-icon">
+                        <select name="trip-return" id="trip-return">
+                            <option value="Ingen returresa">Ingen returresa</option>
+                            <option value="returresa">Jag vill boka returresa</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-trip-return-from">
+                    <label for="trip-return-from">Jag vill resa från:</label><br>
+                    <div class="input-text-icon">
+                        <input type="text" id="trip-return-from" name="trip-return-from" placeholder="ex. Storgatan 1">
+                        <span class="fa-solid fa-arrow-right"></span>
+                    </div>
+                </div>
+                <div class="form-trip-return-to">
+                    <label for="trip-return-to">Jag vill resa till:</label><br>
+                    <div class="input-text-icon">
+                        <input type="text" id="trip-return-to" name="trip-return-to" placeholder="ex. Armegatan 1">
+                        <span class="fa-solid fa-arrow-left"></span>
+                    </div>
+                </div>
+                <div class="form-trip-return-datettime">
+                    <label for="trip-return-date">Avresedag och</label><label for="trip-return-time"> tid:</label><br>
+                    <div class="input-text-icon">
+                        <input type="date" id="trip-return-date" name="trip-return-date">
+                        <input type="time" id="trip-return-time" name="trip-return-time">
+                    </div>
+                </div>
+                <div class="form-trip-return-fellowtraveller">
+                    <label for="trip-return-fellowtraveller">Medresenärer:</label><br>
+                    <div class="input-text-icon">
+                        <select name="trip-return-fellowtraveller" id="trip-return-fellowtraveller">
+                            <option value="Inga medresenärer">Inga medresenärer</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-trip-return-other">
+                    <label for="trip-return-other">Övrig information:</label><br>
+                    <textarea id="trip-return-other" name="trip-return-other"
+                        placeholder="ex. bilbarnstol, ledarhund"></textarea>
+                    <p class="form-trip-other-info">Här kan du skriva mer information om du bokning tex om du har en
+                        medföljande ledarhund, att du önskar sitta fram i bilen eller annan viktigt information</p>
+                </div>
+                <div class="container-submit-trip">
+                    <a href="confirmbokaresa.html" class="purple-button">Boka resa</a>
+                </div>
+            </section>
         </div>
     </main>
     <footer>
