@@ -28,6 +28,7 @@ body {
     color: #000000;
     font-size: 1em;
     line-height: 1.6em;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -66,6 +67,10 @@ header {
     display: none;
 }
 
+.vertical-center {
+    padding: 0px !important;
+}
+
 /*Settings main*/
 main {
     background-color: #D1CCC6;
@@ -93,6 +98,7 @@ section {
     display: grid;
     width: 100%;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 footer {
@@ -340,13 +346,116 @@ footer ul {
     min-width: 100px;
 }
 
+/*form styling*/
+.veichle {
+    box-sizing: border-box;
+    width: 90%;
+    padding: 2%;
+    border: 1px solid #000000;
+    color: white;
+    background-color: #69525E;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    margin-bottom: 15px;
+}
+
+input[type="radio"] {
+    background-color: #fff;
+    margin: 5px;
+    font: inherit;
+    color: currentColor;
+    width: 2.2em;
+    height: 1.1em;
+    border-radius: 50%;
+    accent-color: #000000;
+}
+
+main input[type="text"] {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1.2em;
+}
+
+textarea {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 18px;
+    padding: 20px 30px;
+    width: 75.5%;
+    height: 150px;
+    border: 1px solid #3A3A3A;
+    outline: none;
+    font-size: 1.4em;
+    resize: none;
+}
+
+select {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: "my-font-p", sans-serif;
+    font-size: 1.2em;
+}
+
+.font.style {
+    color: #3F3F3F;
+}
+
+.input-text-icon {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid #3A3A3A;
+    border-radius: 18px;
+    margin-right: 10px;
+    width: 80%;
+    background-color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.input-text-icon span {
+    font-size: 2em;
+}
+
+main input[type="date"] {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    padding: 10px;
+    width: 50%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: "my-font-p", sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+main input[type="time"] {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    padding: 10px;
+    width: 50%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: "my-font-p", sans-serif;
+    font-size: 1.2em;
+}
 
 /*tablet setting*/
 @media screen and (min-width: 800px) and (max-width: 1199px) {
     .vertical-center {
         margin: 0 auto;
         max-width: 1200px;
-        padding: 10px;
+        padding: 0px !important;
     }
 
     .search-wrapper {
@@ -531,6 +640,7 @@ footer ul {
     .vertical-center {
         margin: 0 auto;
         max-width: 1200px;
+        padding: 0px !important;
     }
 
     header {
