@@ -63,30 +63,39 @@
                 <div class="form-contact">
                     <div class="form-contact-fname">
                         <label for="contact-fname">Förnamn</label><br>
-                        <input type="text" id="contact-fname" name="contact-fname" placeholder="Skriv ditt förnamn">
+                        <div class="input-text-icon">
+                            <input type="text" id="contact-fname" name="contact-fname" placeholder="Skriv ditt förnamn">
+                        </div>
                     </div>
                     <div class="form-contact-phone">
                         <label for="contact-phone">Telefonnummer</label><br>
-                        <input type="text" id="contact-phone" name="contact-phone"
-                            placeholder="Skriv ditt telefonnummer">
+                        <div class="input-text-icon">
+                            <input type="text" id="contact-phone" name="contact-phone"
+                                placeholder="Skriv ditt telefonnummer">
+                        </div>
                     </div>
                     <div class="form-contact-email">
                         <label for="contact-email">Email-adress</label><br>
-                        <input type="text" id="contact-email" name="contact-email" placeholder="Skriv din email-adress">
+                        <div class="input-text-icon">
+                            <input type="text" id="contact-email" name="contact-email"
+                                placeholder="Skriv din email-adress">
+                        </div>
                     </div>
                     <div class="form-contact-subject">
                         <label for="contact-subject">Ämne</label><br>
-                        <select name="contact-subject" id="contact-subject">
-                            <option value="subject">Välj ämne</option>
-                            <option value="booking">Bokningsfrågor</option>
-                            <option value="accessibility">Tillgänglighet frågor/anmälan</option>
-                            <option value="others">Övriga frågor</option>
-                        </select>
+                        <div class="input-text-icon">
+                            <select name="contact-subject" id="contact-subject">
+                                <option value="subject">Välj ämne</option>
+                                <option value="booking">Bokningsfrågor</option>
+                                <option value="accessibility">Tillgänglighet frågor/anmälan</option>
+                                <option value="others">Övriga frågor</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="form-contact-question">
                         <label for="contact-question">Skriv din fråga</label><br>
-                        <input type="textarea" id="contact-question" name="contact-question"
-                            placeholder="Här kan du skriva dina frågor eller funderingar">
+                        <textarea id="contact-question" name="contact-question"
+                            placeholder="Här kan du skriva dina frågor eller funderingar"></textarea>
                     </div>
                     <div class="container-submit-contact">
                         <a href="contactformconfirm.html" class="purple-button">Skicka</a>
