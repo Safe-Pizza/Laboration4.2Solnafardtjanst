@@ -194,7 +194,7 @@ footer .footer-container {
 .user a {
     color: #FFFFFF;
     text-decoration: none;
-    width: 118px;
+    width: 120px;
     height: 45px;
     font-size: 0.8em;
 }
@@ -563,6 +563,7 @@ address {
     display: flex;
     justify-content: space-between;
     padding-left: 0px;
+    margin-bottom: 40px;
 }
 
 /*kommande resor canceled booking*/
@@ -879,7 +880,7 @@ div.container-transparent {
     }
 
     .top-nav {
-        width: 110px;
+        width: 130px;
         height: 51px;
         display: block;
         grid-area: 1 / 6 / 2 / 7;
@@ -888,7 +889,7 @@ div.container-transparent {
     }
 
     .user a {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     .main-nav {
