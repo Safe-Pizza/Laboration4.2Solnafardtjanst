@@ -99,6 +99,7 @@ section {
     width: 100%;
     justify-content: center;
     padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 footer {
@@ -483,6 +484,24 @@ main input[type="time"] {
     margin-top: 5ch;
 }
 
+/*Settings section fardtjanst page*/
+section.fardtjanst-page-links {
+    grid-template-columns: 80%;
+    grid-template-rows: auto auto;
+}
+
+section.fardtjanst-page-links .heading {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+ul.page-links {
+    list-style: none;
+    font-size: 1.4em;
+    line-height: 2em;
+    padding-left: 2%;
+    grid-area: 2 / 1 / 3 / 2;
+}
+
 /*tablet setting*/
 @media screen and (min-width: 800px) and (max-width: 1199px) {
     body {
@@ -628,6 +647,7 @@ main input[type="time"] {
         width: 90%;
         margin: 0 auto;
         border-radius: 10px;
+        margin-bottom: 50px;
     }
 
     /*Font sizes*/
@@ -670,6 +690,24 @@ main input[type="time"] {
         margin-top: 10ch;
         max-width: 65ch;
         padding-left: 2%;
+    }
+
+    /*Settings section fardtjanst page*/
+    section.fardtjanst-page-links {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    section.fardtjanst-page-links .heading {
+        grid-area: 1 / 2 / 2 / 5;
+    }
+
+    ul.page-links {
+        list-style: none;
+        font-size: 1.8em;
+        line-height: 2em;
+        padding-left: 2%;
+        grid-area: 2 / 2 / 3 / 5;
     }
 }
 
@@ -823,6 +861,7 @@ main input[type="time"] {
         width: 90%;
         margin: 0 auto;
         border-radius: 10px;
+        margin-bottom: 50px;
     }
 
     footer {
@@ -866,5 +905,23 @@ main input[type="time"] {
         margin-top: 10ch;
         max-width: 65ch;
         padding-left: 2%;
+    }
+
+    /*Settings section fardtjanst page*/
+    section.fardtjanst-page-links {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    section.fardtjanst-page-links .heading {
+        grid-area: 1 / 2 / 2 / 4;
+    }
+
+    ul.page-links {
+        list-style: none;
+        font-size: 2em;
+        line-height: 2em;
+        padding-left: 2%;
+        grid-area: 2 / 2 / 3 / 4;
     }
 }
