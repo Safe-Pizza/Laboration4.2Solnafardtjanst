@@ -31,9 +31,11 @@ body {
     overflow-x: hidden;
 }
 
-h1 {
+h1 a {
     font-family: "my-font-p", sans-serif;
-    font-size: 2em;
+    font-size: 1em;
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 h2 {
