@@ -67,41 +67,50 @@
         <div class="vertical-center">
             <section class="bokaresa">
                 <div class="form-veichle">
-                    <input type="radio" id="taxi" name="veichle" value="Färdtjänsttaxi">
-                    <label for="taxi">Färdtjänsttaxi</label><br>
-                    <input type="radio" id="wheelchair" name="veichle" value="Rullstolstaxi">
-                    <label for="taxi">Rullstolstaxi</label><br>
-                    <input type="radio" id="stretcher" name="veichle" value="Bårtaxi">
-                    <label for="taxi">Bårtaxi</label>
+                    <div class="veichle">
+                        <input type="radio" id="taxi" name="veichle" value="Färdtjänsttaxi">
+                        <label for="taxi">Färdtjänsttaxi</label><br>
+                        <input type="radio" id="wheelchair" name="veichle" value="Rullstolstaxi">
+                        <label for="wheelchair">Rullstolstaxi</label><br>
+                        <input type="radio" id="stretcher" name="veichle" value="Bårtaxi">
+                        <label for="stretcher">Bårtaxi</label>
+                    </div>
                 </div>
                 <div class="form-trip-from">
                     <label for="trip-from">Jag vill resa från:</label><br>
-                    <input type="text" id="trip-from" name="trip-from" placeholder="ex. Storgatan 1">
-                    <span class="fa-solid fa-arrow-right"></span>
+                    <div class="input-text-icon"><input type="text" id="trip-from" name="trip-from"
+                            placeholder="ex. Storgatan 1">
+                        <span class="fa-solid fa-arrow-right"></span>
+                    </div>
                 </div>
                 <div class="form-trip-to">
                     <label for="trip-to">Jag vill resa till:</label><br>
-                    <input type="text" id="trip-to" name="trip-to" placeholder="ex. Armegatan 1">
-                    <span class="fa-solid fa-arrow-left"></span>
+                    <div class="input-text-icon">
+                        <input type="text" id="trip-to" name="trip-to" placeholder="ex. Armegatan 1">
+                        <span class="fa-solid fa-arrow-left"></span>
+                    </div>
                 </div>
                 <div class="form-trip-datettime">
-                    <label for="trip-datetime">Första resan - datum och tid:</label><br>
-                    <input type="datetime-local" id="trip-datetime" name="trip-datetime"
-                        placeholder="Välj startdatum och tid">
-                    <span class="fa-solid fa-calendar-days"></span>
+                    <label for="trip-date">Första resan - datum</label><label for="trip-time"> och tid:</label><br>
+                    <div class="input-text-icon">
+                        <input type="date" id="trip-date" name="trip-return-date" placeholder="Idag">
+                        <input type="time" id="trip-time" name="trip-return-time" placeholder="- nu">
+                    </div>
                 </div>
                 <div class="form-trip-frequence">
                     <label for="trip-frequence">Hur ofta?</label><br>
-                    <select name="trip-frequence" id="trip-frequence">
-                        <option value="Varje">Varje vecka</option>
-                        <option value="Varannan">Varannan vecka</option>
-                        <option value="tredje">Var tredje vecka</option>
-                        <option value="fjarde">Var fjärde vecka</option>
-                    </select>
+                    <div class="input-text-icon">
+                        <select name="trip-frequence" id="trip-frequence">
+                            <option value="Varje">Varje vecka</option>
+                            <option value="Varannan">Varannan vecka</option>
+                            <option value="tredje">Var tredje vecka</option>
+                            <option value="fjarde">Var fjärde vecka</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="form-trip-days">
                     <fieldset>
-                        <legend>Vekodag</legend>
+                        <legend>Veckodag</legend>
 
                         <div>
                             <input type="checkbox" id="monday" name="monday">
@@ -138,27 +147,31 @@
                 </div>
                 <div class="form-trip-date">
                     <label for="trip-date">Slutdatum:</label><br>
-                    <input type="date" id="trip-date" name="trip-date" placeholder="Välj slutdatum">
-                    <span class="fa-solid fa-calendar-days"></span>
+                    <div class="input-text-icon">
+                        <input type="date" id="trip-date" name="trip-date" placeholder="Välj slutdatum">
+                    </div>
                 </div>
                 <div class="form-trip-fellowtraveller">
                     <label for="trip-fellowtraveller">Medresenärer:</label><br>
-                    <select name="trip-fellowtraveller" id="trip-fellowtraveller">
-                        <option value="Inga medresenärer">Inga medresenärer</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
-                </div>
-                <div class="form-trip-other">
-                    <label for="trip-other">Övrig information:</label><br>
-                    <input type="textarea" id="trip-other" name="trip-other" placeholder="ex. bilbarnstol, ledarhund">
-                    <p class="form-trip-other-info">Här kan du skriva mer information om du bokning tex om du har en
-                        medföljande ledarhund, att du önskar sitta fram i bilen eller annan viktigt information</p>
-                </div>
-                <div class="container-submit-trip">
-                    <a href="confirmbokaaterkommande.html" class="purple-button">Boka resor</a>
-                </div>
+                    <div class="input-text-icon">
+                        <select name="trip-fellowtraveller" id="trip-fellowtraveller">
+                            <option value="Inga medresenärer">Inga medresenärer</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="form-trip-other">
+                        <label for="trip-other">Övrig information:</label><br>
+                        <textarea id="trip-other" name="trip-other"
+                            placeholder="ex. bilbarnstol, ledarhund"></textarea>
+                        <p class="form-trip-other-info">Här kan du skriva mer information om du bokning tex om du har en
+                            medföljande ledarhund, att du önskar sitta fram i bilen eller annan viktigt information</p>
+                    </div>
+                    <div class="container-submit-trip">
+                        <a href="confirmbokaaterkommande.html" class="purple-button">Boka resor</a>
+                    </div>
             </section>
         </div>
     </main>
@@ -177,9 +190,12 @@
             </div>
             <div class="socialmedia-links">
                 <ul>
-                    <li><a href="www.instagram.com" title="Instagram"><span class="fa-brands fa-instagram"></span></a></li>
-                    <li><a href="www.facebook.com" title="Facebook"><span class="fa-brands fa-square-facebook"></span></a></li>
-                    <li><a href="www.linkedin.com" title="Linkedin"><span class="fa-brands fa-square-linkedin"></span></a></li>
+                    <li><a href="www.instagram.com" title="Instagram"><span class="fa-brands fa-instagram"></span></a>
+                    </li>
+                    <li><a href="www.facebook.com" title="Facebook"><span
+                                class="fa-brands fa-square-facebook"></span></a></li>
+                    <li><a href="www.linkedin.com" title="Linkedin"><span
+                                class="fa-brands fa-square-linkedin"></span></a></li>
                 </ul>
             </div>
         </div>
