@@ -841,6 +841,11 @@ div.container-transparent {
         overflow-x: visible;
     }
 
+    p {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
     .vertical-center {
         margin: 0 auto;
         max-width: 1200px;
