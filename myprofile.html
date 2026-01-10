@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/normalize.css">
     <script src="https://kit.fontawesome.com/b5d5f68d91.js" crossorigin="anonymous"></script>
-    <title>Bokningsbekräftelse - Solna färdtjänst</title>
+    <title>Min profil - Solna färdtjänst</title>
 </head>
+
 <body>
     <header>
         <div class="main-header vertical-center">
@@ -33,9 +34,9 @@
             </div>
             <nav class="main-nav mypages-nav">
                 <ul class="logon-main-nav">
-                    <li><a href="mypages.html">Mina sidor</a></li>
+                    <li><a class="current-page" href="mypages.html">Mina sidor</a></li>
                     <li><a href="bokaresa.html">Boka resa</a></li>
-                    <li><a class="current-page" href="bokaaterkommande.html">Boka återkommande resa</a></li>
+                    <li><a href="bokaaterkommande.html">Boka återkommande resa</a></li>
                     <li><a href="kommanderesor.html">Mina kommande resor</a></li>
                 </ul>
                 <ul>
@@ -48,45 +49,61 @@
             </nav>
         </div>
     </div>
-    <h2 class="page-title">Bokningsbekräftelse</h2>
-        <main class="kommanderesor-page">
+    <h2 class="page-title">Min profil</h2>
+    <main>
         <div class="vertical-center">
-            <div class="kommande-resa">
-                <div class="confirmation-info">
-                    <div class="confirm-date">
-                        <div class="date-flex">
-                            <span class="fa-solid fa-calendar-days"></span>
-                            <span>2025-12-31</span>
-                        </div>
-                        <div class="flex-time">
-                            <span class="fa-solid fa-clock"></span><span>10:00</span>
+            <section class="contact-form">
+                <h2 class="heading-hidden">Skicka din fråga till oss</h2>
+                <div class="form-myprofile">
+                    <div class="form-myprofile-fname">
+                        <label for="myprofile-fname">Förnamn</label><br>
+                        <div class="input-text-icon">
+                            <input type="text" id="myprofile-fname" name="myprofile-fname" placeholder="Tore">
                         </div>
                     </div>
-                    <div class="confirm-address">
-                        <div class="flex-address">
-                            <span class="fa-solid fa-arrow-right"></span>
-                            <address>Armegatan 1</address>
+                    <div class="form-myprofile-lname">
+                        <label for="myprofile-lname">Efternamn</label><br>
+                        <div class="input-text-icon">
+                            <input type="text" id="myprofile-lname" name="myprofile-lname" placeholder="Nordin">
                         </div>
-                        <div class="flex-veichle">
-                            <span class="fa-solid fa-car"></span><span class="text"> Rullstolstaxi</span>
+                    </div>
+                    <div class="form-myprofile-address">
+                        <label for="myprofile-address">Adress</label><br>
+                        <div class="input-text-icon">
+                            <input type="text" id="myprofile-adress" name="myprofile-adress"
+                                placeholder="Ingentingvägen 1, 17155 Solna">
                         </div>
-                        <div class="confirm-others">
-                            <br><span class="text">Hur ofta: Varannan vecka</span><br>
-                            <span class="text">Veckodag: Måndag, tisdag</span><br><br>
-                            <span class="text">Slutdatum: 2026-02-08</span><br><br>
-                            <span class="text">Medresenärer: 0</span><br>
-                        <span class="text">Övrig information</span><br><br><br><br><br><br><br>
-                        <span class="text-aterkommande">Du kan se dina resor under Mina kommande resor</span><br><br>
+                    </div>
+                    <div class="form-myprofile-phone">
+                        <label for="myprofile-phone">Telefonnummer</label><br>
+                        <div class="input-text-icon">
+                            <input type="text" id="myprofile-phone" name="myprofile-phone" placeholder="+46722345678">
                         </div>
+                    </div>
+                    <div class="form-myprofile-email">
+                        <label for="myprofile-email">Email-adress</label><br>
+                        <div class="input-text-icon">
+                            <input type="text" id="myprofile-email" name="myprofile-email"
+                                placeholder="tore.nordin@pensionar.se">
+                        </div>
+                    </div>
+                    <div class="form-myprofile-card">
+                        <label for="myprofile-card">Färdtjänstkortnummer</label><br>
+                        <div class="input-text-icon">
+                            <input type="text" id="myprofile-card" name="myprofile-card" placeholder="987-654-3210">
+                        </div>
+                    </div>
+                    <div class="form-myprofile-carddate">
+                        <label for="myprofile-carddate">Giltighetstid</label><br>
+                        <div class="input-text-icon">
+                            <input type="text" id="myprofile-carddate" name="myprofile-carddate" placeholder="2028-12-25">
+                        </div>
+                    </div>
+                    <div class="container-submit-contact">
+                        <a href="contactformconfirm.html" class="purple-button">Skicka</a>
                     </div>
                 </div>
-
-                <div class="confirm-buttons-big">
-                    <div class="container-confirm-trip">
-                        <a href="mypages.html" class="purple-button">Mina sidor</a>
-                    </div>
-                </div>
-            </div>
+            </section>
         </div>
     </main>
     <footer>
@@ -104,9 +121,12 @@
             </div>
             <div class="socialmedia-links">
                 <ul>
-                    <li><a href="www.instagram.com" title="Instagram"><span class="fa-brands fa-instagram"></span></a></li>
-                    <li><a href="www.facebook.com" title="Facebook"><span class="fa-brands fa-square-facebook"></span></a></li>
-                    <li><a href="www.linkedin.com" title="Linkedin"><span class="fa-brands fa-square-linkedin"></span></a></li>
+                    <li><a href="www.instagram.com" title="Instagram"><span class="fa-brands fa-instagram"></span></a>
+                    </li>
+                    <li><a href="www.facebook.com" title="Facebook"><span
+                                class="fa-brands fa-square-facebook"></span></a></li>
+                    <li><a href="www.linkedin.com" title="Linkedin"><span
+                                class="fa-brands fa-square-linkedin"></span></a></li>
                 </ul>
             </div>
         </div>
