@@ -52,11 +52,12 @@ section h2 {
 h3 {
     font-size: 1.4em;
     font-family: "my-font-h2-h3", sans-serif;
-    text-align: left;
+    text-align: center;
 }
 
 section h3 {
     margin-bottom: 0px;
+    text-align: left;
 }
 
 h4 {
@@ -957,7 +958,7 @@ span.texttime, span.text-aterkommande {
     }
 
     .user a {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .main-nav {
