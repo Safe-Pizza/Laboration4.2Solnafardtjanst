@@ -41,7 +41,7 @@ h1 a {
 h2 {
     font-size: 1.5625em;
     font-family: "my-font-h2-h3", sans-serif;
-    text-align: left;
+    text-align: center;
 }
 
 section h2 {
@@ -621,6 +621,26 @@ div.booking-cancel {
 
 div.container-transparent {
     display: grid;
+}
+
+/*confirm + confirmed pages*/
+.confirm-buttons-big {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-evenly;
+    padding-left: 0px;
+}
+
+.confirm-buttons-big div {
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+span.texttime, span.text-aterkommande {
+    font-size: 1.4em;
+    color: #0B6030;
 }
 
 /*tablet setting*/
