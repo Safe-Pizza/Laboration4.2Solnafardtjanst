@@ -644,9 +644,32 @@ div.container-transparent {
     justify-content: center;
 }
 
-span.texttime, span.text-aterkommande {
+span.texttime,
+span.text-aterkommande {
     font-size: 1.4em;
     color: #0B6030;
+}
+
+/*images*/
+picture.imgtwo {
+    display: none;
+}
+
+div.container-images {
+    display: flex;
+    padding: 0% 4% 4% 4%;
+    justify-content: center;
+}
+
+div.container-images2 {
+    padding-left: 0px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+img.imgabout {
+    width: 100%;
+    height: auto;
 }
 
 /*tablet setting*/
@@ -859,6 +882,21 @@ span.texttime, span.text-aterkommande {
         line-height: 2em;
         padding-left: 2%;
         grid-area: 2 / 2 / 3 / 5;
+    }
+
+    /*images*/
+    div.container-images {
+        display: flex;
+        padding: 2% 15% 4% 15%;
+        justify-content: space-between;
+    }
+
+    img {
+        border-radius: 10px;
+    }
+
+    picture.imgtwo {
+        display: block;
     }
 }
 
@@ -1083,5 +1121,26 @@ span.texttime, span.text-aterkommande {
         line-height: 2em;
         padding-left: 2%;
         grid-area: 2 / 2 / 3 / 4;
+    }
+
+    /*images*/
+    div.container-images {
+        display: flex;
+        padding: 2% 4% 4% 4%;
+        justify-content: space-between;
+    }
+
+    img {
+        border-radius: 10px;
+    }
+
+    picture.imgtwo {
+        display: block;
+    }
+
+    div.container-images2 {
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
     }
 }
