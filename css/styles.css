@@ -731,6 +731,27 @@ blockquote {
     margin: 6% 2% 2% 2%;
 }
 
+/*centering buttons my-pages firefox*/
+div.container-boka-resa {
+    margin: 0 auto;
+}
+
+div.container-boka-aterkommande {
+    margin: 0 auto;
+}
+
+div.container-mina-resor {
+    margin: 0 auto;
+}
+
+div.container-my-profile {
+    margin: 0 auto;
+}
+
+div.container-logout {
+    margin: 0 auto;
+}
+
 /*tablet setting*/
 @media screen and (min-width: 800px) and (max-width: 1199px) {
     body {
