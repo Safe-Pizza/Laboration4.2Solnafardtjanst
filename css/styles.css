@@ -80,7 +80,7 @@ ol.orderedlist-page {
     list-style: none;
     max-width: 65ch;
     font-family: "my-font-p", sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 2%;
 }
 
@@ -91,7 +91,7 @@ ol.orderedlist-page li {
 ul.unorderedlist-page {
     max-width: 65ch;
     font-family: "my-font-p", sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 4%;
 }
 
@@ -401,6 +401,14 @@ footer ul {
 .contact-buttons div {
     padding-left: 0px;
     margin-bottom: 40px;
+}
+
+.index-button {
+    padding-left: 0px;
+}
+
+.account-button {
+    padding-left: 0px;
 }
 
 /*form styling*/
@@ -967,6 +975,14 @@ blockquote {
     blockquote {
         margin: 6% 2% 2% 2%;
     }
+
+    ol.orderedlist-page {
+        font-size: 1.2em;
+    }
+
+    ul.unorderedlist-page {
+        font-size: 1.2em;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1165,6 +1181,14 @@ blockquote {
         padding: 0;
         margin: 0;
         text-align: left;
+    }
+
+    ol.orderedlist-page {
+        font-size: 1.4em;
+    }
+
+    ul.unorderedlist-page {
+        font-size: 1.4em;
     }
 
     /*Setting main headings*/
