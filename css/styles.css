@@ -966,13 +966,19 @@ div.container-logout {
 
     /*images*/
     div.container-images {
-        display: flex;
+        display: grid;
         padding: 2% 15% 4% 15%;
-        justify-content: space-between;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        justify-items: center;
     }
 
     img {
         border-radius: 10px;
+    }
+
+    picture {
+        padding: 10px;
     }
 
     picture.imgtwo {
@@ -1014,7 +1020,7 @@ div.container-logout {
 
     .vertical-center {
         margin: 0 auto;
-        max-width: 1200px;
+        max-width: 1200px !important;
         padding: 0px !important;
     }
 
