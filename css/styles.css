@@ -95,7 +95,7 @@ ul.unorderedlist-page {
 }
 
 header {
-    width: 100vw;
+    width: 100%;
     background-color: #3F3F3F;
     color: #FFFFFF;
     text-align: center;
@@ -108,7 +108,7 @@ header {
 }
 
 .vertical-center {
-    width: 100vw;
+    width: 100%;
     padding: 0px !important;
 }
 
@@ -758,6 +758,7 @@ div.container-logout {
     .vertical-center {
         margin: 0 auto;
         padding: 0px !important;
+        max-width: 100%;
     }
 
     .search-wrapper {
@@ -777,12 +778,14 @@ div.container-logout {
 
     header {
         min-height: 84px;
+        max-width: 100%;
     }
 
     .main-header {
         display: flex;
         justify-content: space-between;
         align-content: center;
+        width: 100%;
     }
 
     /*Search header*/
@@ -790,9 +793,9 @@ div.container-logout {
         position: relative;
         display: flex;
         align-items: center;
-        padding: 10px 15px;
+        padding: 10px 20px;
         border: 1px solid;
-        margin-right: 10px;
+        margin-right: 0px;
         width: 30%;
         background-color: #FFFFFF;
     }
@@ -817,7 +820,7 @@ div.container-logout {
     }
 
     .wrapper-navigation-fullwitdh {
-        width: 100vw;
+        width: 100%;
         background-color: #FFFFFF;
         min-height: 80px;
     }
@@ -827,6 +830,7 @@ div.container-logout {
         grid-template-columns: auto auto;
         padding: 0px;
         min-height: 80px;
+        max-width: 100%;
     }
 
     .top-nav {
@@ -1019,7 +1023,6 @@ div.container-logout {
     }
 
     .main-header {
-        min-width: 1200px;
         display: flex;
         justify-content: space-between;
         align-content: center;
@@ -1045,6 +1048,7 @@ div.container-logout {
         min-height: 84px;
         align-items: center;
         justify-content: space-between;
+        max-width: 100%;
     }
 
     /*Search header*/
@@ -1054,7 +1058,7 @@ div.container-logout {
         align-items: center;
         padding: 10px 15px;
         border: 1px solid;
-        margin-right: 10px;
+        margin-right: 0px !important;
         width: 30%;
         background-color: #FFFFFF;
     }
@@ -1087,6 +1091,7 @@ div.container-logout {
         display: grid;
         grid-template-columns: auto auto;
         min-height: 80px;
+        max-width: 100%;
     }
 
     .top-nav {
