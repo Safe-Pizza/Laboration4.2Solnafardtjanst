@@ -23,8 +23,8 @@
 }
 
 *:focus-visible {
-  outline: 3px solid rgb(255, 255, 255);
-  box-shadow: 0 0 0 6px rgb(0, 0, 0);
+    outline: 3px solid rgb(255, 255, 255);
+    box-shadow: 0 0 0 6px rgb(0, 0, 0);
 }
 
 body {
@@ -32,7 +32,7 @@ body {
     background-color: #F6F6F4;
     color: #000000;
     font-size: 1em;
-    line-height: 1.6em;
+    line-height: 1.8em;
 }
 
 h1 a {
@@ -600,7 +600,7 @@ section.fardtjanst-page-links .heading {
 ul.page-links {
     list-style: none;
     font-size: 1.4em;
-    line-height: 2em;
+    line-height: 2.2em;
     padding-left: 2%;
     grid-area: 2 / 1 / 3 / 2;
 }
@@ -964,7 +964,7 @@ div.container-logout {
     ul.page-links {
         list-style: none;
         font-size: 1.8em;
-        line-height: 2em;
+        line-height: 2.2em;
         padding-left: 2%;
         grid-area: 2 / 2 / 3 / 5;
     }
@@ -1240,7 +1240,7 @@ div.container-logout {
     ul.page-links {
         list-style: none;
         font-size: 2em;
-        line-height: 2em;
+        line-height: 2.2em;
         padding-left: 2%;
         grid-area: 2 / 2 / 3 / 4;
     }
