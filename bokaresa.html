@@ -110,49 +110,53 @@
                     <label for="trip-return" class="hidden-label">Returresa:</label><br>
                     <div class="input-text-icon">
                         <select name="trip-return" id="trip-return">
-                            <option value="Ingen returresa">Ingen returresa</option>
-                            <option value="returresa">Jag vill boka returresa</option>
+                            <option value="0">Jag vill boka returresa</option>
+                            <option value="1">Ingen returresa</option>
                         </select>
                     </div>
                 </div>
-                <div class="form-trip-return-from">
-                    <label for="trip-return-from">Jag vill resa från:</label><br>
-                    <div class="input-text-icon">
-                        <input type="text" id="trip-return-from" name="trip-return-from" placeholder="ex. Storgatan 1">
-                        <span class="fa-solid fa-arrow-right"></span>
+                <div id="div-hidden">
+                    <div class="form-trip-return-from">
+                        <label for="trip-return-from">Jag vill resa från:</label><br>
+                        <div class="input-text-icon">
+                            <input type="text" id="trip-return-from" name="trip-return-from"
+                                placeholder="ex. Storgatan 1">
+                            <span class="fa-solid fa-arrow-right"></span>
+                        </div>
                     </div>
-                </div>
-                <div class="form-trip-return-to">
-                    <label for="trip-return-to">Jag vill resa till:</label><br>
-                    <div class="input-text-icon">
-                        <input type="text" id="trip-return-to" name="trip-return-to" placeholder="ex. Armegatan 1">
-                        <span class="fa-solid fa-arrow-left"></span>
+                    <div class="form-trip-return-to">
+                        <label for="trip-return-to">Jag vill resa till:</label><br>
+                        <div class="input-text-icon">
+                            <input type="text" id="trip-return-to" name="trip-return-to" placeholder="ex. Armegatan 1">
+                            <span class="fa-solid fa-arrow-left"></span>
+                        </div>
                     </div>
-                </div>
-                <div class="form-trip-return-datettime">
-                    <label for="trip-return-date">Avresedag och</label><label for="trip-return-time"> tid:</label><br>
-                    <div class="input-text-icon">
-                        <input type="date" id="trip-return-date" name="trip-return-date">
-                        <input type="time" id="trip-return-time" name="trip-return-time">
+                    <div class="form-trip-return-datettime">
+                        <label for="trip-return-date">Avresedag och</label><label for="trip-return-time">
+                            tid:</label><br>
+                        <div class="input-text-icon">
+                            <input type="date" id="trip-return-date" name="trip-return-date">
+                            <input type="time" id="trip-return-time" name="trip-return-time">
+                        </div>
                     </div>
-                </div>
-                <div class="form-trip-return-fellowtraveller">
-                    <label for="trip-return-fellowtraveller">Medresenärer:</label><br>
-                    <div class="input-text-icon">
-                        <select name="trip-return-fellowtraveller" id="trip-return-fellowtraveller">
-                            <option value="Inga medresenärer">Inga medresenärer</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select>
+                    <div class="form-trip-return-fellowtraveller">
+                        <label for="trip-return-fellowtraveller">Medresenärer:</label><br>
+                        <div class="input-text-icon">
+                            <select name="trip-return-fellowtraveller" id="trip-return-fellowtraveller">
+                                <option value="Inga medresenärer">Inga medresenärer</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-                <div class="form-trip-return-other">
-                    <label for="trip-return-other">Övrig information:</label><br>
-                    <textarea id="trip-return-other" name="trip-return-other"
-                        placeholder="ex. bilbarnstol, ledarhund"></textarea>
-                    <p class="form-trip-other-info">Här kan du skriva mer information om du bokning tex om du har en
-                        medföljande ledarhund, att du önskar sitta fram i bilen eller annan viktigt information</p>
+                    <div class="form-trip-return-other">
+                        <label for="trip-return-other">Övrig information:</label><br>
+                        <textarea id="trip-return-other" name="trip-return-other"
+                            placeholder="ex. bilbarnstol, ledarhund"></textarea>
+                        <p class="form-trip-other-info">Här kan du skriva mer information om du bokning tex om du har en
+                            medföljande ledarhund, att du önskar sitta fram i bilen eller annan viktigt information</p>
+                    </div>
                 </div>
                 <div class="container-submit-trip">
                     <a href="confirmbokaresa.html" class="purple-button">Boka resa</a>
@@ -189,6 +193,7 @@
     <!--Function for hamburgermenu mobile-->
     <script>
         document.querySelector("#icon-menu").addEventListener("click", myFunction);
+        document.querySelector("#trip-return").addEventListener("change", showForm);
 
         function myFunction() {
             var x = document.querySelector(".main-nav");
@@ -196,6 +201,17 @@
                 x.style.display = "none";
             } else {
                 x.style.display = "block";
+            }
+        }
+
+        function showForm() {
+            let formValue = document.querySelector("#trip-return").value;
+            let divEl = document.querySelector("#div-hidden");
+
+            if (formValue = 1) {
+                divEl.style.display = "none";
+            } else {
+                divEl.style.display = "block";
             }
         }
     </script>
