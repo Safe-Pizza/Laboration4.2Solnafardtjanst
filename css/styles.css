@@ -758,6 +758,10 @@ div.container-logout {
     margin: 0 auto;
 }
 
+.purple {
+    background-color: #69525E;
+}
+
 /*tablet setting*/
 @media screen and (min-width: 800px) and (max-width: 1199px) {
     .vertical-center {
