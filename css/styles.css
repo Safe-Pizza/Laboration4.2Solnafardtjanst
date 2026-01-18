@@ -451,6 +451,17 @@ main input[type="text"] {
     font-size: 1.2em;
 }
 
+main input[type="password"] {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1.2em;
+}
+
 textarea {
     background: #FFFFFF;
     border: 1px solid #000000;
